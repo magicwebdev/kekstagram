@@ -1,11 +1,11 @@
-function getRandomNumber(min, max) {
+function getRandomIntegerNumber(min, max) {
   if (isNaN(Number(min)) || isNaN(Number(max)) || min < 0 || min >= max) {
-    throw new Error('Неверный диапазон');
+    throw new Error('Задан неверный диапазон');
   }
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-getRandomNumber(3, 10);
+getRandomIntegerNumber(3, 10);
 
 function checkMaxLength(str, maxLength) {
   return str.length <= maxLength;
